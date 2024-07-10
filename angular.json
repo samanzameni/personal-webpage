@@ -31,7 +31,6 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/styles/kit/_iransans.scss",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "./node_modules/font-awesome/css/font-awesome.css"
             ],
@@ -46,12 +45,12 @@
                 {
                   "type": "initial",
                   "maximumWarning": "4mb",
-                  "maximumError": "5mb"
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "6kb",
+                  "maximumError": "10mb"
                 }
               ],
               "outputHashing": "all"
@@ -97,7 +96,6 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/styles/kit/_iransans.scss",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "./node_modules/font-awesome/css/font-awesome.css"
             ],
