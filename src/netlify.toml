@@ -1,6 +1,6 @@
 [build]
-command = "ng build --prod"
-publish = "dist/personal-webpage/"
+command = "ng build"
+publish = "dist/personal-webpage"
 
 [[redirects]]
 from = "/*"
