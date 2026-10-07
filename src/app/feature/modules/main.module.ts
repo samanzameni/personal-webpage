@@ -19,7 +19,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'ٍeducation',
+        path: 'education',
         loadChildren: () =>
           import('./education.module').then(
             (module) => module.EducationModule
