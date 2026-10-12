@@ -90,6 +90,11 @@ const routes: Routes = [
       },
       {
         path: 'workshops',
+        redirectTo: 'activities-awards',
+        pathMatch: 'full',
+      },
+      {
+        path: 'activities-awards',
         loadChildren: () =>
           import('./workshops.module').then(
             (module) => module.WorkshopsModule
