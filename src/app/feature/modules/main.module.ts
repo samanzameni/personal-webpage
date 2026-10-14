@@ -76,10 +76,8 @@ const routes: Routes = [
       },
       {
         path: 'related-courses',
-        loadChildren: () =>
-          import('./related-courses.module').then(
-            (module) => module.RelatedCoursesModule
-          ),
+        redirectTo: 'education',
+        pathMatch: 'full',
       },
       {
         path: 'skills',
