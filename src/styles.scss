@@ -11,3 +11,61 @@ body {
   background-color: #8697C4 !important;
 
 }
+
+/* Page layout shared by all pages ------------------------------------- */
+.body {
+  background-color: #7091E6;
+  min-height: 85vh;
+  border: 5px solid #ADBBDA;
+  border-radius: 24px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.box-css {
+  border: 1px solid lightblue;
+  border-radius: 20px;
+  background-color: #EDE8F5;
+  padding: 40px;
+  margin: 40px 0;
+}
+
+.text-model {
+  text-align: center;
+  line-height: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Long links (DOIs, URLs) must not push the page wider than the screen */
+.box-css a {
+  overflow-wrap: anywhere;
+}
+
+/* Tablets and phones */
+@media (max-width: 767.98px) {
+  .body {
+    margin: 8px;
+    padding: 8px;
+    border-width: 3px;
+    border-radius: 14px;
+    min-height: auto;
+  }
+  .box-css {
+    padding: 22px 16px;
+    margin: 12px 0;
+    border-radius: 14px;
+  }
+  .box-css h3 {
+    font-size: 1.35rem;
+  }
+  .box-css p[style*="justify"] {
+    text-align: left !important;   /* justified text leaves big gaps on narrow screens */
+  }
+  .box-css .row > [class*="col-"] + [class*="col-"] {
+    margin-top: 2px;
+  }
+}

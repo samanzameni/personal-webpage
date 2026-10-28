@@ -1,39 +1,41 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light nav-figure">
+<nav class="navbar navbar-expand-lg navbar-dark nav-figure">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand d-lg-none" routerLink="/introduction" (click)="close()">Saman Zameni</a>
+    <button class="navbar-toggler" type="button" (click)="toggle()"
+            aria-controls="mainNav" [attr.aria-expanded]="isOpen" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse nav-icon" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse" [class.show]="isOpen" id="mainNav">
+      <ul class="navbar-nav nav-list">
         <li class="nav-item">
-          <a class="nav-link nav-tab" routerLink="/introduction" routerLinkActive="active"><i class="bi bi-info-circle"></i> About</a>
+          <a class="nav-link nav-tab" routerLink="/introduction" routerLinkActive="active" (click)="close()"><i class="bi bi-info-circle"></i> About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-tab" routerLink="/publications" routerLinkActive="active"><i class="bi bi-journal"></i> Publications</a>
+          <a class="nav-link nav-tab" routerLink="/publications" routerLinkActive="active" (click)="close()"><i class="bi bi-journal"></i> Publications</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-tab" routerLink="/classroom-projects" routerLinkActive="active"><i class="bi bi-kanban"></i> Research &amp; Projects</a>
+          <a class="nav-link nav-tab" routerLink="/classroom-projects" routerLinkActive="active" (click)="close()"><i class="bi bi-kanban"></i> Research &amp; Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-tab" routerLink="/education" routerLinkActive="active"><i class="bi bi-backpack2"></i> Education</a>
+          <a class="nav-link nav-tab" routerLink="/education" routerLinkActive="active" (click)="close()"><i class="bi bi-backpack2"></i> Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-tab" routerLink="/practical-experience" routerLinkActive="active"><i class="bi bi-person-workspace"></i> Experience</a>
+          <a class="nav-link nav-tab" routerLink="/practical-experience" routerLinkActive="active" (click)="close()"><i class="bi bi-person-workspace"></i> Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-tab" routerLink="/skills" routerLinkActive="active"><i class="bi bi-person-gear"></i> Skills</a>
+          <a class="nav-link nav-tab" routerLink="/skills" routerLinkActive="active" (click)="close()"><i class="bi bi-person-gear"></i> Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-tab" routerLink="/conferences" routerLinkActive="active"><i class="bi bi-easel"></i> Conferences &amp; Schools</a>
+          <a class="nav-link nav-tab" routerLink="/conferences" routerLinkActive="active" (click)="close()"><i class="bi bi-easel"></i> Conferences &amp; Schools</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-tab" routerLink="/activities-awards" routerLinkActive="active"><i class="bi bi-people"></i> Activities &amp; Awards</a>
+          <a class="nav-link nav-tab" routerLink="/activities-awards" routerLinkActive="active" (click)="close()"><i class="bi bi-people"></i> Activities &amp; Awards</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-tab" routerLink="/language-proficiency" routerLinkActive="active"><i class="bi bi-translate"></i> Languages &amp; Test Scores</a>
+          <a class="nav-link nav-tab" routerLink="/language-proficiency" routerLinkActive="active" (click)="close()"><i class="bi bi-translate"></i> Languages &amp; Test Scores</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-tab" routerLink="/contact-me" routerLinkActive="active"><i class="bi bi-telephone"></i> Contact</a>
+          <a class="nav-link nav-tab" routerLink="/contact-me" routerLinkActive="active" (click)="close()"><i class="bi bi-telephone"></i> Contact</a>
         </li>
       </ul>
     </div>
