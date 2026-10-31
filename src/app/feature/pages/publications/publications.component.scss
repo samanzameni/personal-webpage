@@ -1,19 +1,46 @@
-:host{
-  .pub-section{
-    color: #3D52A0;
-    margin: 10px 0 16px;
+:host {
+  .pub-section {
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin: 4px 0 16px;
   }
-  .paper-cite{
-    text-align: center;
-    font-size: 14px;
-    margin-bottom: 14px;
+  .paper-title {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin: 0 0 8px;
   }
-  .ga-img{
+  .paper-cite {
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin-bottom: 18px;
+    max-width: none;
+  }
+  .paper-cite b { color: var(--ink); }
+  .status {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 1px 10px;
+    margin-right: 8px;
+    vertical-align: 1px;
+  }
+  .status.published {
+    background: var(--teal);
+    color: #fff;
+  }
+  .status.submitted {
+    border: 1px solid var(--teal);
+    color: var(--teal);
+  }
+  .ga-img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    border: 1px solid #ADBBDA;
-    margin-bottom: 16px;
+    border-radius: 6px;
+    border: 1px solid var(--rule);
+    margin-bottom: 20px;
   }
 }

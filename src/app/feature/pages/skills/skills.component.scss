@@ -1,0 +1,8 @@
+:host {
+  .skill-row {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--rule);
+    &:last-child { border-bottom: 0; }
+  }
+  .skill-row b { display: block; padding-top: 3px; }
+}
