@@ -1,0 +1,11 @@
+{
+  // Cloudflare Workers static-assets deployment for the Angular build output.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "samanzameni",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist/personal-webpage/browser",
+    // Angular client-side routes (/publications, /education, ...) are served by index.html
+    "not_found_handling": "single-page-application"
+  }
+}
