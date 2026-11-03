@@ -70,9 +70,11 @@ img { max-width: 100%; height: auto; }
 
 .box-css b, .box-css strong { font-weight: 600; }
 
-/* Reading text: ragged right reads better on screens than justified */
-.box-css p[style*="justify"] { text-align: left !important; }
-.box-css p { max-width: 72ch; }
+/* Reading text fills the sheet; justified on wide screens, ragged on phones */
+.box-css p[style*="justify"] {
+  text-align: justify;
+  hyphens: auto;
+}
 
 .box-css a { overflow-wrap: anywhere; }
 
@@ -149,6 +151,7 @@ img { max-width: 100%; height: auto; }
     border-radius: 8px;
   }
   .box-css h3 { font-size: 1.35rem; }
+  .box-css p[style*="justify"] { text-align: left !important; }
   .timeline > .row { margin-left: 0; margin-right: 0; }
   .timeline > .row > [class*="col-"] { padding-right: 0; }
   .timeline > .row > [class*="col-"]:first-child {
